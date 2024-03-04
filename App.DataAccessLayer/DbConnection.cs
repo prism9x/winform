@@ -54,7 +54,6 @@ namespace App.DataAccessLayer
             cmd.Connection = GetCon();
             SqlDataReader reader = cmd.ExecuteReader();
             DataTable dt = new DataTable();
-            reader = cmd.ExecuteReader();
             dt.Load(reader);
             con.Close();
             return dt;
