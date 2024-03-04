@@ -33,6 +33,8 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtSubmit = new System.Windows.Forms.Button();
+            this.dgvListUser = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListUser)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -77,11 +79,20 @@
             this.txtSubmit.UseVisualStyleBackColor = true;
             this.txtSubmit.Click += new System.EventHandler(this.txtSubmit_Click);
             // 
+            // dgvListUser
+            // 
+            this.dgvListUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListUser.Location = new System.Drawing.Point(62, 259);
+            this.dgvListUser.Name = "dgvListUser";
+            this.dgvListUser.Size = new System.Drawing.Size(647, 306);
+            this.dgvListUser.TabIndex = 5;
+            // 
             // frmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(847, 600);
+            this.Controls.Add(this.dgvListUser);
             this.Controls.Add(this.txtSubmit);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtName);
@@ -89,6 +100,8 @@
             this.Controls.Add(this.label1);
             this.Name = "frmRegister";
             this.Text = "frmRegister";
+            this.Load += new System.EventHandler(this.frmRegister_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,5 +114,6 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button txtSubmit;
+        private System.Windows.Forms.DataGridView dgvListUser;
     }
 }

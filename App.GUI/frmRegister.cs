@@ -32,6 +32,7 @@ namespace App.GUI
         private void frmRegister_Load(object sender, System.EventArgs e)
         {
 
+            dgvListUser.DataSource = userBUS.GetAll();
         }
     }
 }
